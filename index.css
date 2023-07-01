@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "Euclid Circular";
+  src: url("/accepts/fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Light.ttf");
+}
+
+
+
 li{
   list-style-type: none;
 }
 body{
   overflow-x: hidden;
 }
+
+
 .container{
   width: 1920px;
   margin: 0 auto;
@@ -292,7 +301,111 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 440px);
   gap: 40px;
+  margin-bottom: 180px;
 }
 .grid-product img.grid-product-img:nth-child(1){
   text-align: left;
+}
+.section_three-content{
+  background-color: #F2F2F2;
+  width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+.up{
+  display: flex;
+}
+.section_three-img{
+  margin-top: 87px;
+  margin-left: 180px;
+}
+.best_quality{
+  position: absolute;
+  top: 152px;
+  left: 4px;
+  z-index: 120;
+  content: url("./accepts/icons/best_quality.svg");
+}
+.advantages{
+  color: #292D32;
+  font-size: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin-top: 182px;
+  margin-left: -75px;
+}
+.optimization{
+  color: #838383;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: -75px;
+  margin-top: 37px;
+}
+.contain-bid{
+  display: flex;
+  align-items: center;
+  margin-left: -75px;
+  margin-top: 41px;
+}
+.bid{
+  color: #292D32;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.down{
+  width: 1400px;
+  margin: 48px auto 0;
+  padding-bottom: 46px;
+}
+.contain-cards{
+  display: flex;
+}
+.black-square{
+  width: 70px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #343A41;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 25px;
+}
+.card{
+  width: 330px;
+  height: 229px;
+  background-color: #292D32;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  margin-right: 25px;
+}
+.card-title{
+  color: #FFF;
+  font-size: 22px;
+  font-family: 'Euclid Circular';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 13px;
+}
+.card-description{
+  color: #B7B7B7;
+  font-size: 15px;
+  font-family: 'Euclid Circular';
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.vector{
+  content: url('./accepts/icons/Vector.svg');
+  position: absolute;
+  right: 0;
+  top: 0;
 }
