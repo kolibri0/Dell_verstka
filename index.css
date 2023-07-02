@@ -713,3 +713,71 @@ body{
   content: url('./accepts/icons/our\ contacts.png');
   padding-top: 184px;
 }
+
+.contain-footer{
+  margin-top: 60px;
+}
+.footer-up{
+  display: flex;
+}
+.footer-logo{
+  width: 112px;
+  height: 112px;
+  margin-left: 260px;
+  margin-right: 190px;
+}
+.footer-section{
+  margin-right: 180px;
+  margin-bottom: 60px;
+}
+.footer-title{
+  color: #292D32;
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.footer-item{
+  color: #292D32;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.hr{
+  width: 1400px;
+  height: 1px;
+  background-color: #E5E5E5;
+  margin: 0 auto;
+}
+.footer-down{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 260px;
+}
+.footer-bottom-item{
+  margin-right: 153px;
+}
+.footer-bottom-title{
+  color: #838383;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.687%;
+  margin-bottom: 11px;
+}
+.footer-bottom-text{
+  color: #292D32;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
