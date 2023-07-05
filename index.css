@@ -993,6 +993,8 @@ div.container{
   }
   .left-content{
     display: block;
+    width: 375px;
+    margin: 0 auto;
   }
   .catalog{
     display: none;
@@ -1085,6 +1087,9 @@ div.container{
   }
   .type{
     font-size: 20px;
+  }
+  .logo{
+    margin-right: 15px;
   }
   .goods{
     font-size: 15px;
