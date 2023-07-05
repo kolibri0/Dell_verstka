@@ -12,40 +12,56 @@
 </head>
 
 <body>
-  <header>
+
+
+  <header id="nav-menu" aria-label="navigation bar">
     <div class="container">
-      <nav class="nav">
-        <div class="left">
-          <div class="logo-container">
-            <img class="logo" src="/accepts/icons/logo.png" alt="">
+      <div class="nav-start">
+        <a class="logo" href="/">
+          <img src="./accepts/icons/logo.png" width="70" height="70" alt="Inc Logo" />
+        </a>
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li><a class="nav-link">ГЛАВНАЯ</a></li>
+            <li><a class="nav-link">КАТАЛОГ</a></li>
+            <li><a class="nav-link">НОВОСТИ</a></li>
+            <li><a class="nav-link">НАШ АСЦ</a></li>
+            <li><a class="nav-link">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img class="search-icon" src="/accepts/icons/search.svg" alt="">
+      <div class="nav-end">
+        <div class="right-container">
+          <img class="icon-item" id="dropdown" src="./accepts/icons/Group1.svg" width="46" height="46" alt="">
+          <div class="dropdown-content" id="dropdown-content">
+            <a class="dropdown-content-item" href="#"><img class="dropdown-icon" id="dropdown"
+                src="./accepts/icons/Group1.svg" width="46" height="46" alt=""></a>
+            <div class="hr-drop"></div>
+            <a class="dropdown-content-item" href="#">Личный кабинет</a>
+            <div class="hr-drop"></div>
+            <a class="dropdown-content-item" href="#">История заказов</a>
+            <div class="hr-drop"></div>
+            <a class="dropdown-content-item" href="#">Персональные предложения</a>
+            <div class="hr-drop"></div>
+            <a class="dropdown-content-item" href="#">Выйти</a>
           </div>
-          <ul class="navigation">
-            <li class="navigation-item">ГЛАВНАЯ</li>
-            <li class="navigation-item">КАТАЛОГ</li>
-            <li class="navigation-item">НОВОСТИ</li>
-            <li class="navigation-item">НАШ АСЦ</li>
-            <li class="navigation-item">КОНТАКТЫ</li>
-            <div class="search_icon-container">
-              <img class="search" src="/accepts/icons/search.svg" alt="">
-            </div>
-          </ul>
+          <img class="icon-item" src="./accepts/icons/Group2.svg" width="46" height="46" alt="">
+          <img class="icon-item" src="./accepts/icons/heart.svg" width="46" height="46" alt="">
+          <img class="icon-item" src="./accepts/icons/shop.svg" width="46" height="46" alt="">
         </div>
-        <div class="right">
-          <ul class="nav-icons">
-            <li class="nav-icon-item"><img src="./accepts/icons/Group1.svg" alt=""></li>
-            <li class="nav-icon-item"><img src="./accepts/icons/Group2.svg" alt=""></li>
-            <li class="nav-icon-item"><img src="./accepts/icons/heart.svg" alt=""></li>
-            <li class="nav-icon-item"><img src="./accepts/icons/shop.svg" alt=""></li>
-          </ul>
-        </div>
-    </div>
-    </nav>
+        <button class="burger" id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <img class="line" src="./accepts/icons/lines.svg" alt="">
+          <img class="line" src="./accepts/icons/lines.svg" alt="">
+          <img class="line" src="./accepts/icons/lines.svg" alt="">
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="section_one">
-      <div class="container">
+      <div class="containerM">
         <div class="section_one-content">
           <div class="left-content">
             <div>
@@ -66,13 +82,17 @@
               </div>
             </div>
             <div class="img">
-              <img class="newPhoto" src="./accepts/icons/newPhoto.png" alt="">
-              <div class="slider-btns">
-                <div class="slider-btn-active"></div>
-                <div class="slider-btn"></div>
-                <div class="slider-btn"></div>
-                <div class="slider-btn"></div>
-                <div class="slider-btn"></div>
+              <img class="newPhoto active" id="img1" src="./accepts/icons/newPhoto.png" alt="">
+              <img class="newPhoto" id="img2" src="./accepts/icons/newPhoto.png" style="opacity: 0.5;" alt="">
+              <img class="newPhoto" id="img3" src="./accepts/icons/newPhoto.png" style="opacity: 0.9;" alt="">
+              <img class="newPhoto" id="img4" src="./accepts/icons/newPhoto.png" style="opacity: 0.2;" alt="">
+              <img class="newPhoto" id="img5" src="./accepts/icons/newPhoto.png" style="opacity: 0.8;" alt="">
+              <div class="slider-btns" id="slider-btns">
+                <div class="slider-btn active" id="1"></div>
+                <div class="slider-btn" id="2"></div>
+                <div class="slider-btn" id="3"></div>
+                <div class="slider-btn" id="4"></div>
+                <div class="slider-btn" id="5"></div>
               </div>
             </div>
           </div>
@@ -84,8 +104,9 @@
         </div>
       </div>
     </section>
+
     <section class="section_two">
-      <div class="container">
+      <div class="containerM">
         <div class="section_two-content">
           <div class="grid-products">
             <div class="product-catalog">
@@ -136,6 +157,8 @@
         </div>
       </div>
     </section>
+
+
     <section class="section_three">
       <div class="section_three-content">
         <div class="up">
@@ -145,9 +168,9 @@
           </div>
           <div class="section_three-right">
             <div class="advantages">Наши преимущества</div>
-            <div class="optimization">Оптимизация мощностей (расходов, социальных<br>выплат и т.п.) позволили компании
+            <div class="optimization">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании
               на 4,7% понизить
-              цены<br>по сравнению с конкурентами</div>
+              цены по сравнению с конкурентами</div>
             <div class="contain-bid">
               <div class="circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
               <div class="bid">Оставить заявку</div>
@@ -160,7 +183,7 @@
               <div class="black-square"><img class="card-icon" src="./accepts/icons/card-icon.svg" alt="card icon">
               </div>
               <div class="vector"></div>
-              <div class="card-title">Самые выгодные<br>и низкие цены</div>
+              <div class="card-title">У нас самые выгодные<br>и низкие цены</div>
               <div class="card-description">В наличии широкий ассортимент,<br>а также доступные цены<br>на ноутбуки Dell
               </div>
             </div>
@@ -191,6 +214,8 @@
         </div>
       </div>
     </section>
+
+
     <section class="section_four">
       <div class="contain-news">
         <div class="news-left">
@@ -211,7 +236,7 @@
         <div class="grid-cards">
           <div class="description-card">
             <div class="description-card-up">
-              <img class="description-img" src="./accepts/icons/grid1.png">
+              <img class="description-img" width="454" src="./accepts/icons/grid1.png">
               <div class="contain-date">
                 <div class="date-num">11</div>
                 <p class="date-month">июля</p>
@@ -220,13 +245,12 @@
             <div class="description-card-down">
               <img class="description-img-down" src="./accepts/icons/down.svg">
               <div class="contain-dark-circle">
-                <div class="dark-circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
+                <div class="dark-circle"><img class="arrow dark" src="./accepts/icons/arraw.svg" alt=""></div>
               </div>
               <div class="card-text">GE использует<br>технологии Dell </div>
               <div class="see-more">Вы можете посмотреть ещё больше интересных</div>
             </div>
           </div>
-
           <div class="description-card">
             <div class="description-card-up">
               <img class="description-img" src="./accepts/icons/grid2.png">
@@ -238,7 +262,7 @@
             <div class="description-card-down">
               <img class="description-img-down" src="./accepts/icons/down.svg">
               <div class="contain-dark-circle">
-                <div class="dark-circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
+                <div class="dark-circle"><img class="arrow dark" src="./accepts/icons/arraw.svg" alt=""></div>
               </div>
               <div class="card-text">GE использует<br>технологии Dell </div>
               <div class="see-more">Вы можете посмотреть ещё больше интересных</div>
@@ -255,7 +279,7 @@
             <div class="description-card-down">
               <img class="description-img-down" src="./accepts/icons/down.svg">
               <div class="contain-dark-circle">
-                <div class="dark-circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
+                <div class="dark-circle"><img class="arrow dark" src="./accepts/icons/arraw.svg" alt=""></div>
               </div>
               <div class="card-text">GE использует<br>технологии Dell </div>
               <div class="see-more">Вы можете посмотреть ещё больше интересных</div>
@@ -272,7 +296,7 @@
             <div class="description-card-down">
               <img class="description-img-down" src="./accepts/icons/down.svg">
               <div class="contain-dark-circle">
-                <div class="dark-circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
+                <div class="dark-circle"><img class="arrow dark" src="./accepts/icons/arraw.svg" alt=""></div>
               </div>
               <div class="card-text">GE использует<br>технологии Dell </div>
               <div class="see-more">Вы можете посмотреть ещё больше интересных</div>
@@ -289,7 +313,7 @@
             <div class="description-card-down">
               <img class="description-img-down" src="./accepts/icons/down.svg">
               <div class="contain-dark-circle">
-                <div class="dark-circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
+                <div class="dark-circle"><img class="arrow dark" src="./accepts/icons/arraw.svg" alt=""></div>
               </div>
               <div class="card-text">GE использует<br>технологии Dell </div>
               <div class="see-more">Вы можете посмотреть ещё больше интересных</div>
@@ -306,7 +330,7 @@
             <div class="description-card-down">
               <img class="description-img-down" src="./accepts/icons/down.svg">
               <div class="contain-dark-circle">
-                <div class="dark-circle"><img class="arrow" src="./accepts/icons/arraw.svg" alt=""></div>
+                <div class="dark-circle"><img class="arrow dark" src="./accepts/icons/arraw.svg" alt=""></div>
               </div>
               <div class="card-text">GE использует<br>технологии Dell </div>
               <div class="see-more">Вы можете посмотреть ещё больше интересных</div>
@@ -314,6 +338,7 @@
           </div>
     </section>
   </main>
+
   <section class="section_five">
     <div class="contacts"></div>
     <div class="contain-form">
@@ -368,11 +393,13 @@
       </div>
     </div>
   </section>
+
+
   <footer class="footer">
     <div class="contain-footer">
       <div class="footer-up">
         <img class="footer-logo" src="./accepts/icons/logo.png" alt="">
-        <div class="footer-section">
+        <div class="footer-section first">
           <div class="footer-title">Каталог</div>
           <div class="footer-item">Ноутбуки</div>
           <div class="footer-item">Персональные компьютеры</div>
@@ -380,7 +407,7 @@
           <div class="footer-item">Dell EMC</div>
           <div class="footer-item">Запасные части к Dell EMC</div>
         </div>
-        <div class="footer-section">
+        <div class="footer-section second">
           <div class="footer-title">Личный кабинет</div>
           <div class="footer-item">Профиль</div>
           <div class="footer-item">История заказов</div>
@@ -388,7 +415,7 @@
           <div class="footer-item">Избранное</div>
           <div class="footer-item">Сравнение товаров</div>
         </div>
-        <div class="footer-section">
+        <div class="footer-section third">
           <div class="footer-title">Помощь</div>
           <div class="footer-item">Доставка и оплата</div>
           <div class="footer-item">Контакты</div>
@@ -417,6 +444,7 @@
     </div>
   </footer>
 
+  <script src="/index.js"></script>
 </body>
 
 </html>
